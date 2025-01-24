@@ -1,0 +1,172 @@
+/* Google Font Link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+/* General Reset and Font Settings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Body Styling */
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #7d2ae8; /* Background color */
+  padding: 30px;
+}
+
+/* Container Styling */
+.container {
+  position: relative;
+  max-width: 550px;
+  width: 100%;
+  background: #fff; /* Background color for container */
+  padding: 40px 30px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); /* Shadow for 3D effect */
+  text-align: center;
+}
+
+/* Signup Form Styling */
+.signup-form {
+  width: 100%;
+}
+
+/* Title Styling */
+.signup-form .title {
+  font-size: 24px;
+  font-weight: 500;
+  color: #333; /* Title text color */
+  margin-bottom: 20px;
+  position: relative;
+  text-align: left;
+}
+
+/* Title Underline Decoration */
+.signup-form .title:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 28px;
+  border-radius: 12px;
+  background: #4070f4; /* Underline color */
+}
+
+/* Input Boxes Container */
+.signup-form .input-boxes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+
+/* Individual Input Box Styling */
+.signup-form .input-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 100%;
+  margin: 10px 0;
+  position: relative;
+}
+
+/* Input Field Styling */
+.input-box input {
+  height: 100%;
+  width: 80%;
+  outline: none;
+  border: none;
+  padding: 0px 20px;
+  font-size: 16px;
+  font-weight: 500;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.2); /* Border color and size */
+  transition: border-color 0.3s ease;
+  text-align: left;
+}
+
+/* Input Field Focus/Valid State */
+.input-box input:focus,
+.input-box input:valid {
+  border-color: #7d2ae8; /* Border color when input is focused or valid */
+}
+
+/* Icon inside Input Box */
+.input-box i {
+  position: absolute;
+  color: #7d2ae8; /* Icon color */
+  font-size: 17px;
+  left: 10px;
+}
+
+/* Button Styling */
+.button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* Submit Button Styling */
+.button input {
+  color: #fff; /* Text color */
+  background: #7d2ae8; /* Background color */
+  border-radius: 6px;
+  padding: 10px;
+  cursor: pointer;
+  transition: background 0.4s ease;
+  border: none;
+  width: 80%;
+  text-align: center;
+}
+
+/* Button Hover Effect */
+.button input:hover {
+  background: #5b13b9; /* Background color on hover */
+}
+
+/* Sign-Up Text Styling */
+.text.sign-up-text {
+  font-size: 14px;
+  font-weight: 500;
+  color: #333; /* Text color */
+  margin-top: 25px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Link Styling inside Sign-Up Text */
+.text.sign-up-text a {
+  color: #5b13b9; /* Link color */
+  cursor: pointer;
+}
+
+/* Link Hover Effect */
+.text.sign-up-text a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 730px) {
+  .container {
+    text-align: left;
+  }
+
+  .signup-form {
+    display: block;
+  }
+
+  .signup-form .input-box input {
+    width: 100%;
+    text-align: left;
+  }
+
+  .button {
+    width: 100%;
+  }
+}

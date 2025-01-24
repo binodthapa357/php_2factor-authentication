@@ -1,0 +1,11 @@
+{
+    "name": "junu/2factor",
+    "autoload": {
+        "psr-4": {
+            "Junu\\2factor\\": "src/"
+        }
+    },
+    "require": {
+        "phpmailer/phpmailer": "^6.9"
+    }
+}
